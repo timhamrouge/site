@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,12 @@
     <title>Document</title>
 </head>
 <body>
+
+    <div id="app-5">
+        <p> {{ message }} </p>
+        <button v-on:click="reverseMessage">Reverse Message</button>
+    </div>
+
     <div id="app">
         {{message}}
     </div>
@@ -15,7 +21,19 @@
     <div id="app-2">
         <span v-bind:title="message">Hover you fairy</span>
     </div>
-    
+
+    <div id="app-4">
+
+        <ol>
+            <li v-for="todo in todos">
+                {{ todo.text }}
+            </li>
+        </ol>
+
+    </div>
+
+
+
     <script src="./index.js"></script>
 </body>
 </html>
