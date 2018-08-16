@@ -8,9 +8,14 @@
     <title>Document</title>
 </head>
 <body>
-        
-    I like to put aubergines up my bottom
-	
-	but my bottom hurts
+    <div id="app">
+        {{message}}
+    </div>
+
+    <div id="app-2">
+        <span v-bind:title="message">Hover you fairy</span>
+    </div>
+    
+    <script src="./index.js"></script>
 </body>
 </html>
